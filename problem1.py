@@ -6,6 +6,17 @@
 
 def main():
   naive(1000)
+  functional_sum(1000)
+
+def series_function(multiple, limit):
+  n = (limit - 1) // multiple
+  return multiple * (((n * n) + n) // 2)
+
+def functional_sum(number):
+  sum_3 = series_function(3, number)
+  sum_5 = series_function(5, number)
+  sum_15 = series_function(15, number)
+  print(sum_3 + sum_5 - sum_15)
 
 def naive(number):
   sum = 0
