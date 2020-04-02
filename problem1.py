@@ -38,7 +38,4 @@ def multiple_3_or_5(number):
 def multiple(number, multiple):
   return True if number % multiple == 0 else False
 
-def hello_world():
-  print('Hello World!')
-
 main()
